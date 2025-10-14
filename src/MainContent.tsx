@@ -4,7 +4,8 @@ import { useEffect, useState } from 'react';
 
 export default function MainContent() {
     return (
-        <div className = "flex flex-row items-start justify-center">
+        <div className = "flex flex-row justify-center">
+        <div className = "flex flex-col items-start justify-center">
             {/*Left Side: Text Placement*/}
             <div className = "flex flex-col items-start translate-x-[12vw] -translate-y-[10vh]">
                 <h1 className = "font-roboto font-bold text-[5rem] text-gray-900">
@@ -28,8 +29,10 @@ export default function MainContent() {
                     />
                 </a>
             </div>
+            </div>
             {/* Right Side: Image Carousel */}
             <ImageCarousel />
+        
         </div>
     );
 }
@@ -52,13 +55,13 @@ function ImageCarousel() {
         return () => clearInterval(interval);
     }, [images.length]);
     return (
-        <div className="flex-1 h-[600px] w-[320px] relative ml-12 rounded-lg flex items-center justify-center bg-transparent overflow-hidden">
+        <div className="flex-1 h-[600px] w-[320px] relative ml-12 flex items-center justify-center bg-transparent overflow-hidden">
             {images.map((src, i) => (
                 <img
                     key={src}
                     src={src}
                     alt="App screenshot"
-                    className={`w-[40vw] absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-700 ${index === i ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                    className={`w-[40vw] rounded-lg absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-700 ${index === i ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                     draggable={false}
                 />
             ))}
