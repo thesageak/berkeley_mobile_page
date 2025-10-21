@@ -1,7 +1,8 @@
-import { useState } from 'react'
+import { Outlet } from "react-router-dom"
 import Background from './Background'
 import MainContent from './MainContent'
 import Footer from './Footer'
+
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Background />
 
       <main className="flex flex-col flex-1 justify-center">
-        <MainContent />
+        <Outlet />
       </main>
 
       <Footer />
