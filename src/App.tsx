@@ -1,19 +1,20 @@
 import { Outlet } from "react-router-dom"
 import Background from './Background'
-import MainContent from './MainContent'
 import Footer from './Footer'
 
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen relative">
       <Background />
 
-      <main className="flex flex-col flex-1 justify-center">
+      <main className="flex flex-col flex-1 justify-center z-10">
         <Outlet />
       </main>
 
-      <Footer />
+      <div className="relative z-10">
+        <Footer />
+      </div>
     </div>
   )
 }
