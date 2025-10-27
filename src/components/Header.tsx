@@ -2,9 +2,16 @@ import { Link } from "react-router";
 
 function Header() {
   return (
-    <Link to="/" className="z-11">
-      <img id="logo" src="/logo.svg" className="absolute top-[2vw] left-[1vw] w-[6vw] h-[6vw]" />
-    </Link>
+    <div className="relative md:fixed top-0 left-0 w-full h-16 md:h-20 flex justify-start items-center px-4 md:px-8 z-[1000] py-8 md:py-16 transition-all">
+      <Link to="/">
+        <img
+          id="logo"
+          src="/logo.svg"
+          className="w-10 md:w-16 transition-all"
+          alt="Logo"
+        />
+      </Link>
+    </div>
   );
 }
 

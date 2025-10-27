@@ -1,4 +1,4 @@
-import { ImageCarousel, HeroSection } from "../components";
+import { ImageCarousel, HeroSection } from "../../components";
 
 function Home() {
   return (
