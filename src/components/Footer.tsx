@@ -2,7 +2,7 @@ import { Link } from "react-router";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-row justify-around items-center mb-[40px]">
+    <footer className="flex flex-row flex-wrap justify-around p-[32px] gap-[16px] items-center z-10">
       <Link to="/privacy" className="cursor-pointer hover:underline">
         Privacy
       </Link>

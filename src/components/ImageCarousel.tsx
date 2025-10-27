@@ -7,7 +7,7 @@ import {
   resources_light,
   safety_light,
   study_light,
-} from "../../assets";
+} from "../assets";
 import { useState, useEffect } from "react";
 
 function ImageCarousel() {
@@ -32,18 +32,18 @@ function ImageCarousel() {
   }, []);
 
   return (
-  <div className="relative h-[600px] w-full overflow-hidden">
-    {images.map((image, index) => (
-      <img
-        key={index}
-        src={image}
-        alt={`Slide ${index}`}
-        className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000
+    <div className="relative w-full h-[600px] md:h-full overflow-hidden">
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Slide ${index}`}
+          className={`absolute inset-0 w-full h-full object-contain transition-opacity duration-1000
           ${index === currImgIndex ? "opacity-100 z-10" : "opacity-0 z-0"}`}
-      />
-    ))}
-  </div>
-);
+        />
+      ))}
+    </div>
+  );
 
 }
 

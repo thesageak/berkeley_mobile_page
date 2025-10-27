@@ -1,4 +1,4 @@
-import { blue_blob, yellow_blob, pink_blob } from "./assets";
+import { blue_blob, yellow_blob, pink_blob } from "../assets";
 
 export default function Background() {
   return (

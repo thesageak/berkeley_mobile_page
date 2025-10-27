@@ -1,12 +1,12 @@
-import ImageCarousel from "../components/ImageCarousel/ImageCarousel";
+import ImageCarousel from "../components/ImageCarousel";
 import appStore from "../assets/app-store.svg";
 
 function Home() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] items-center">
-      <div className="flex flex-col items-start justify-center">
+    <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] items-center px-[64px]">
+      <div className="flex flex-col items-center justify-center">
         {/*Left Side: Text Placement*/}
-        <div className="flex flex-col items-start ml-[12vw] mt-[12vw] mb-[12vw]">
+        <div className="flex flex-col items-start py-[64px]">
           <h1 className="font-roboto font-bold text-[5rem] text-gray-900">Berkeley</h1>
 
           <h1 className="font-roboto font-bold text-[5rem] text-gray-900 -mt-12">Mobile</h1>
