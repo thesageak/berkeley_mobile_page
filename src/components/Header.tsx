@@ -7,7 +7,7 @@ function Header() {
         <img
           id="logo"
           src="/logo.svg"
-          className="w-10 md:w-16 transition-all"
+          className="w-10 md:w-16 transition-transform duration-300 ease-out hover:scale-105 hover:-translate-y-1"
           alt="Logo"
         />
       </Link>
