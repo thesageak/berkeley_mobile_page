@@ -3,3 +3,8 @@
 @theme {
   --font-roboto: "Roboto", sans-serif;
 }
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
