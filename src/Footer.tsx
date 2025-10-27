@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 
 export default function Footer() {
   return (
@@ -6,7 +6,7 @@ export default function Footer() {
       <Link to="/privacy" className="cursor-pointer hover:underline">
         Privacy
       </Link>
-      <Link to="/release" className="cursor-pointer hover:underline">
+      <Link to="/release-notes" className="cursor-pointer hover:underline">
         Release Notes
       </Link>
       <Link to="/contact" className="cursor-pointer hover:underline">

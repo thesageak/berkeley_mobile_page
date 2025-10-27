@@ -1,4 +1,4 @@
-export default function Release() {
+export default function ReleaseNotes() {
     return (
         <div className = "flex flex-col items-start ml-[12vw] mt-[-10vh]">
             <h1 className="text-[10vh] font-roboto text-gray-900 font-bold">
