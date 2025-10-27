@@ -1,8 +1,8 @@
-export default function RealeaseNotes() {
+export default function ReleaseNotes() {
   return (
     <div className="flex items-center justify-center ">
       <div className="flex flex-col flex-wrap items-start w-[80vw]">
-        <h1 className="font-bold text-[5rem] text-gray-900 leading-[1]">Realease Notes</h1>
+        <h1 className="font-bold text-[5rem] text-gray-900 leading-[1]">Release Notes</h1>
         <p className="text-[1.5rem] text-gray-900">
           Lorem ipsum dolor sit amet, concsectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
