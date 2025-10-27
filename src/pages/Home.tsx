@@ -1,7 +1,7 @@
 import ImageCarousel from "../components/ImageCarousel/ImageCarousel";
 import appStore from "../assets/app-store.svg";
 
-function MainContent() {
+function Home() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_1fr] items-center">
       <div className="flex flex-col items-start justify-center">
@@ -29,4 +29,4 @@ function MainContent() {
   );
 }
 
-export default MainContent;
+export default Home;
