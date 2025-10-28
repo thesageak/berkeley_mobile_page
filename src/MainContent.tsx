@@ -3,6 +3,7 @@ import appStore from './assets/app-store.svg'
 import { useEffect, useState } from 'react';
 
 export default function MainContent() {
+    
     return (
         <div className="flex flex-row justify-center">
             <div className="flex flex-col items-start justify-center">
@@ -26,6 +27,7 @@ export default function MainContent() {
                             id='app-store'
                             src={appStore}
                             className="mt-8 w-40"
+                            loading="eager" 
                         />
                     </a>
                 </div>
@@ -66,6 +68,7 @@ function ImageCarousel() {
                     alt="App screenshot"
                     className={`rounded-lg absolute h-full object-contain transition-opacity duration-700 ${index === i ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                     draggable={false}
+                    loading="eager" 
                 />
             ))}
         </div>
