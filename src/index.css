@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
 @theme {
-  --font-roboto: "Roboto", sans-serif; 
+  --font-roboto: "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+}
+
+main {
+  padding-top: 64px; /* match header/nav height */
+}
+
+@media (max-width: 767px) {
+  main {
+    padding-top: 0;
+  }
 }
