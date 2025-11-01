@@ -1,31 +1,23 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.tsx'
-import Privacy from './pages/Privacy.tsx'
-import Release from './pages/Release.tsx'
-import Contact from './pages/Contact.tsx'
-import About from './pages/About.tsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./app/App.tsx";
 
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import MainContent from './MainContent.tsx'
+import { Home, Privacy, ReleaseNotes, Contact, About } from "./app/pages/index.ts";
+import { BrowserRouter, Routes, Route } from "react-router";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      { path: "/", element: <MainContent /> },
-      { path: "/privacy", element: <Privacy /> },
-      { path: "/release", element: <Release /> },
-      { path: "/contact", element: <Contact /> },
-      { path: "/about", element: <About /> }
-    ]
-  },
-]);
-
-createRoot(document.getElementById('root')!).render(
+createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
-)
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />}>
+          <Route index element={<Home />} />
+          <Route path="privacy" element={<Privacy />} />
+          <Route path="release-notes" element={<ReleaseNotes />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </StrictMode>
+);
