@@ -1,16 +1,23 @@
+import { ContactLink } from "../../components";
+
 export default function Contact() {
   return (
-    <div className="flex items-center justify-center ">
-      <div className="flex flex-col flex-wrap items-start w-[80vw]">
-        <h1 className="font-bold text-[5rem] text-gray-900 leading-[1]">Contact Us</h1>
-        <p className="text-[1.5rem] text-gray-900">
-          Lorem ipsum dolor sit amet, concsectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-          ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-          sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.
-        </p>
+    <div className="flex items-center justify-center">
+      <div className="flex flex-col flex-wrap items-start w-[60vw]">
+        <h1 className="font-bold text-[4rem] text-gray-900 leading-[1] mb-4">Contact Us</h1>
+
+        <ContactLink
+          text="Email:"
+          linkText="berkeleymobile@asuc.org"
+          href="mailto:berkeleymobile@asuc.org"
+          target="_self"
+        />
+
+        <ContactLink
+          text="Join Berkeley Mobile:"
+          linkText="Apply here"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfa7IntnIQYDDcXwe2xVaP2f-xOuxRoitoz4YOt97dHPZ5slg/viewform"
+        />
       </div>
     </div>
   );
