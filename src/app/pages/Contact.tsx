@@ -3,7 +3,7 @@ import { ContactLink } from "../../components";
 export default function Contact() {
   return (
     <div className="flex items-center justify-center">
-      <div className="flex flex-col flex-wrap items-start w-[80vw]">
+      <div className="flex flex-col flex-wrap items-start w-[60vw]">
         <h1 className="font-bold text-[4rem] text-gray-900 leading-[1] mb-4">Contact Us</h1>
 
         <ContactLink

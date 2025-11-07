@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <div className="flex items-center justify-center ">
-      <div className="flex flex-col flex-wrap items-start w-[80vw] space-y-4">
+      <div className="flex flex-col flex-wrap items-start w-[60vw] space-y-4">
         <h1 className="font-bold text-[4rem] text-gray-900 leading-[1] mb-4">About Us</h1>
         <p className="text-[1.2rem] text-gray-900">
           Berkeley Mobile is a native iOS application designed to provide UC Berkeley students with
