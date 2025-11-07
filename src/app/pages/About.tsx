@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="flex items-center justify-center ">
       <div className="flex flex-col flex-wrap items-start w-[80vw]">
-        <h1 className="font-bold text-[5rem] text-gray-900 leading-[1]">About Us</h1>
+        <h1 className="font-bold text-[4rem] text-gray-900 leading-[1] mb-4">About Us</h1>
         <p className="text-[1.5rem] text-gray-900">
           Lorem ipsum dolor sit amet, concsectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
